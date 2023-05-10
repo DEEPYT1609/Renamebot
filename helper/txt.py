@@ -1,7 +1,7 @@
 
 class mr(object):
     PROGRESS_BAR = """\n
-╭━━━━❰☢ @tgnvs ☢❱━➣
+╭━━━━❰☢ @TGNVS ☢❱━➣
 ┣⪼ 🗂️ : {1} | {2}
 ┣⪼ ⏳️ : {0}%
 ┣⪼ 🚀 : {3}/s
