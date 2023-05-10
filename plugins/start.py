@@ -14,7 +14,8 @@ from config import START_PIC, FLOOD, ADMIN
 async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
-        await db.add_user(user.id)             
+        await db.add_user(user.id)
+        await message.delete()
     txt=f"👋 Hello {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
     button=InlineKeyboardMarkup([[
         InlineKeyboardButton('⚡️ About', callback_data='about'),
